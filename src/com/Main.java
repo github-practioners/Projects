@@ -4,6 +4,7 @@ import com.basic.JavaExamples.*;
 import com.intermediate.DataStructures.Factorial;
 import com.intermediate.DataStructures.Fibonacci;
 import com.intermediate.DataStructures.SingleDimensionalArray;
+import com.intermediate.DataStructures.TwoDimensionalArray;
 
 
 import java.awt.*;
@@ -249,13 +250,22 @@ public class Main {
 //        }
 
 
-        SingleDimensionalArray sdaObj = new SingleDimensionalArray(10);
-        sdaObj.traverseArray();
-        sdaObj.insertArrayValueByLocation(5, 25);
-        sdaObj.insertArrayValueByLocation(6, 30);
-        sdaObj.insertArrayValueByLocation(5, 25);
-        sdaObj.insertArrayValueByLocation(11, 25);
+//        SingleDimensionalArray sdaObj = new SingleDimensionalArray(10);
+//        sdaObj.traverseArray();
+//        sdaObj.insertArrayValueByLocation(5, 25);
+//        sdaObj.insertArrayValueByLocation(6, 30);
+//        sdaObj.insertArrayValueByLocation(5, 25);
+//        sdaObj.insertArrayValueByLocation(11, 25);
 
+        TwoDimensionalArray tdaObj = new TwoDimensionalArray(3,2);
+        tdaObj.traverseArray();
+
+        tdaObj.insertValueInTheArray(2,1, 4);
+        tdaObj.accessValueInTheArray(2,1);
+        tdaObj.searchValueInTheArray(4);
+        tdaObj.deleteValueFromArray(2,1);
+        tdaObj.deleteThisArray();
+        tdaObj.accessValueInTheArray(2,1);
 
 
     }
